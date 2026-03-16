@@ -8,13 +8,22 @@ import { onMounted } from 'vue'
 <template>
   <Carousel />
 
+  <div class="container bg-secondary mt-5">
+    <h2>
+      ¡Diviertete con tu familia completando divertidos retos personalizados!
+    </h2>
+    <p class="fs-5">
+      ¡Inicia sesion para retar a familiares o amigos y así competir para ver quien es el mejor!
+    </p>
+  </div>
+
   <div class="information-container">
     <div container-fluid class="d-flex justify-center align-middle text-center">
       <div class="col-6 bg-secondary">
-        <p>Puto</p>
+        <p>Alga</p>
       </div>
       <div class="col-6 bg-primary">
-        <p>Puta</p>
+        <p>algo</p>
       </div>
     </div>
   </div>
@@ -22,7 +31,7 @@ import { onMounted } from 'vue'
 </template>
 
 <style scoped>
-.information-container{
+.information-container {
   margin-top: 2vh;
   background-color: black;
 }
