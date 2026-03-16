@@ -8,13 +8,16 @@ import { onMounted } from 'vue'
 <template>
   <Carousel />
 
-  <div class="container bg-secondary mt-5">
+  <div class="container bg-secondary mt-5 d-flex flex-column justify-content-center">
     <h2>
       ¡Diviertete con tu familia completando divertidos retos personalizados!
     </h2>
     <p class="fs-5">
       ¡Inicia sesion para retar a familiares o amigos y así competir para ver quien es el mejor!
     </p>
+    <button class="btn btn-primary ">
+      Iniciar Sesion
+    </button>
   </div>
 
   <div class="information-container">
