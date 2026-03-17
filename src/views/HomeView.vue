@@ -41,6 +41,13 @@ import { onMounted } from 'vue'
             Puedes retar a tus amigos con retos que inventeis y establecer recompensas a cambio o ver quien consigue
             completar mas retos que el resto.
           </p>
+          <p>
+            Puedes dinamizar el hacer las tareas del hogar para tus hijos o familares gracias a los retos, llevando un
+            seguimiento de quien los cumple y establecer recompensas a traves del sistema de puntos.
+          </p>
+          <p>
+            Mas cosas cuando regrese la inspiracion divina
+          </p>
         </div>
       </div>
       <div class="col-md-6">
