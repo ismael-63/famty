@@ -54,7 +54,14 @@ import { onMounted } from 'vue'
         <div class="p-3 bg-warning">
           <h4 class="pt-2 pb-2">Sobre nosotros</h4>
           <p>
-            Hola que tal
+            Este es un proyecto realizado por una sola persona con la intención de recordar las tecnologias usadas para
+            crear esta página web
+          </p>
+          <p>
+            Esta creada en mis ratos libres pero intentando mantener una constancia
+          </p>
+          <p>
+            El proyecto avanza de forma muy lenta y con muchas rectificaciones pero avanza, que es lo importante
           </p>
         </div>
       </div>
