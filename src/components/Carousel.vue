@@ -18,9 +18,8 @@
 
 <style scoped>
 #carouselId {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50% - 2rem);
+  width: 100%;
+  max-width: 100vw;
 }
 
 .carousel-item {
