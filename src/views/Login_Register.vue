@@ -4,7 +4,7 @@
 
 <template>
 
-<div class="container bg-primary">
+<div class="container d-flex justify-content-center bg-primary">
     <p>Hola</p>
 </div>
 
