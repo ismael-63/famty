@@ -1,7 +1,12 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
 import Carousel from '../components/Carousel.vue'
-import { onMounted } from 'vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+function goLogin() {
+  router.push("/login");
+}
 
 </script>
 
@@ -16,7 +21,7 @@ import { onMounted } from 'vue'
         ¡Inicia sesion para retar a familiares o amigos y así competir para ver quien es el mejor!
       </p>
       <div class="d-flex justify-content-center mb-4">
-        <button class="login-btn">
+        <button class="login-btn" @click="goLogin">
           Iniciar Sesion
         </button>
       </div>
