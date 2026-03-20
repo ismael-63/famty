@@ -7,7 +7,6 @@ import { onMounted } from 'vue'
 
 <template>
   <Carousel />
-
   <div class="main-section">
     <div class="container mt-5 d-flex flex-column justify-content-center text-center">
       <h1 class="main-title">
@@ -77,7 +76,7 @@ import { onMounted } from 'vue'
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 4rem 0;
-  
+
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
