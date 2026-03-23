@@ -1,23 +1,52 @@
 <script setup>
+import { ref } from 'vue'
 
+const isLogin = ref(true)
 </script>
 
 <template>
     <div class="login_container d-flex justify-content-center align-items-center">
         <div class="login-card">
-            <h2 class="login-title">Iniciar Sesión</h2>
-            <form action="">
-                <div class="form-group">
-                    <label for="username">Usuario</label>
-                    <input type="text" id="username" class="form-input" placeholder="Ingresa tu usuario" />
-                </div>
-                <div class="form-group">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" class="form-input" placeholder="Ingresa tu contraseña">
-                </div>
-                <button type="submit" class="login-btn">Entrar</button>
-            </form>
-            <p class="register-link">¿No tienes cuenta? <a href="#">Regístrate</a></p>
+            <!-- Formulario de Inicio de Sesión -->
+            <div v-if="isLogin">
+                <h2 class="login-title">Iniciar Sesión</h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="username">Usuario</label>
+                        <input type="text" id="username" class="form-input" placeholder="Ingresa tu usuario" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" class="form-input" placeholder="Ingresa tu contraseña">
+                    </div>
+                    <button type="submit" class="login-btn">Entrar</button>
+                </form>
+                <p class="register-link">¿No tienes cuenta? <a href="#" @click.prevent="isLogin = false">Regístrate</a>
+                </p>
+            </div>
+
+            <!-- Formulario de Registro -->
+            <div v-else>
+                <h2 class="login-title">Crear Cuenta</h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="reg-username">Usuario</label>
+                        <input type="text" id="reg-username" class="form-input" placeholder="Elige un usuario" />
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Contraseña</label>
+                        <input type="password" id="reg-password" class="form-input" placeholder="Crea una contraseña">
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-confirm-password">Confirmar Contraseña</label>
+                        <input type="password" id="reg-confirm-password" class="form-input"
+                            placeholder="Confirma tu contraseña">
+                    </div>
+                    <button type="submit" class="login-btn">Registrarse</button>
+                </form>
+                <p class="register-link">¿Ya tienes cuenta? <a href="#" @click.prevent="isLogin = true">Inicia
+                        Sesión</a></p>
+            </div>
         </div>
     </div>
 </template>
